@@ -20,4 +20,6 @@ jobs:
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
         with:
+          draft: true
+          body_path: CHANGELOG.MD
           files: file.txt
